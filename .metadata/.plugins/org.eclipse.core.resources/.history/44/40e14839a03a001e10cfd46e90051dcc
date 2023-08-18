@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    
+    <groupId>com.soapapi</groupId>
+    <artifactId>webServices</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>webServices</name>
+    <description>Demo project for Spring Boot</description>
+    
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+    
+    <dependencies>
+        <!-- Spring Boot Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+        <!-- Spring Web Services -->
+        <dependency>
+            <groupId>org.springframework.ws</groupId>
+            <artifactId>spring-ws-core</artifactId>
+        </dependency>
+        
+        <!-- Spring Core Dependencies -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <!-- Spring Data JPA -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web-services</artifactId>
+    
+        </dependency>
+        <!-- javax.activation API -->
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>javax.activation-api</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        
+        <!-- Spring Boot DevTools -->
+       
+        
+        <!-- Spring Boot Test Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+  <build>
+    <plugins>
+        <!-- Other plugins ... -->
+        
+        <!-- JAXB Plugin -->
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>jaxb2-maven-plugin</artifactId>
+            <version>1.6</version>
+            <executions>
+                <execution>
+                    <id>xjc</id>
+                    <goals>
+                        <goal>xjc</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
+                <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+                <clearOutputDir>false</clearOutputDir>
+                <!-- Add any additional configuration options here -->
+                <!-- Example: <schemaIncludes>
+                              <include>your-schema.xsd</include>
+                          </schemaIncludes> -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+    
+</project>

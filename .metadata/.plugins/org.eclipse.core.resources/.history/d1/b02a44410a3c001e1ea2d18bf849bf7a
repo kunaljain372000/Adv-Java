@@ -1,0 +1,14 @@
+package com.soapapi.webServices.service;
+
+import com.soapapi.webServices.entites.Employee;
+
+public interface IEmployeeService {
+
+	public void AddEmployee(Employee employee);
+
+	public Employee getEmployeeById(long employeeId);
+
+    public void updateEmployee(Employee employee);
+
+    public void deleteEmployee(long employeeId);
+}

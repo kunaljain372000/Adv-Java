@@ -1,0 +1,15 @@
+package com.tas.restApi.service;
+
+import org.springframework.stereotype.Service;
+
+import com.tas.restApi.entites.Shop;
+
+@Service
+public class ShopService {
+
+    public Shop createShop(Shop shop) {
+      
+
+        return shop;
+    }
+}

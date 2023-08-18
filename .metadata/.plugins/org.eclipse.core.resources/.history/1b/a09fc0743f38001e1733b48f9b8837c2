@@ -1,0 +1,5 @@
+package com.soapapi.webServices.Application;
+
+public class EmployeeEndpoint {
+
+}

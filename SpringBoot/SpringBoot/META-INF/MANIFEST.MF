@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpringBoot
+Bundle-SymbolicName: SpringBoot
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: SpringBoot
+Export-Package: com.tas.SpringBoot,
+ com.tas.SpringBoot.controller,
+ com.tas.SpringBoot.entities,
+ com.tas.SpringBoot.repository,
+ com.tas.SpringBoot.service

@@ -1,0 +1,10 @@
+package com.soapapi.webServices.ww;
+
+import com.soapapi.webServices.EmployeeEndpoint;
+
+public class Snippet {
+	public static void main(String[] args) {
+		EmployeeEndpoint 
+	}
+}
+

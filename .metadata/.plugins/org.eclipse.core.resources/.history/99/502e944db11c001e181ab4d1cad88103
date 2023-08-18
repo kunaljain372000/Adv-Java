@@ -1,0 +1,13 @@
+package com.tas.wildfly18.controller;
+
+public class Controller {
+
+	@RestController
+	public class HelloApi {
+
+	    @GetMapping("/hello")
+	    public String hello() {
+	        return "Hello from Spring Boot";
+	    }
+	}
+}

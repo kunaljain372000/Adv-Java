@@ -1,0 +1,13 @@
+package com.api.Soap.service;
+
+
+public interface IEmployeeService {
+
+	 public AddEmployeeResponse AddEmployee(AddEmployeeRequest request);
+
+	 Employee getEmployeeResponse getEmployeeById(GetEmployeeRequest request);
+
+    void updateEmployee(Employee employee);
+
+    void deleteEmployee(long employeeId);
+}

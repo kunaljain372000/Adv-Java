@@ -1,0 +1,28 @@
+package com.soapapi.webServices.interfacess;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+    "employeeId"
+})
+@XmlRootElement(name = "deleteEmployeeRequest")
+public class DeleteEmployeeRequest {
+
+    protected long employeeId;
+
+    /**
+     * Gets the value of the employeeId property.
+     * 
+     */
+    public long getEmployeeId() {
+        return employeeId;
+    }
+
+    /**
+     * Sets the value of the employeeId property.
+     * 
+     */
+    public void setEmployeeId(long value) {
+        this.employeeId = value;
+    }
+
+}

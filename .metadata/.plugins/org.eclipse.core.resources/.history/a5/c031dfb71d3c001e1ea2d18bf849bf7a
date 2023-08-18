@@ -1,0 +1,5 @@
+package com.api.Soap.entittes;
+
+public class Employee {
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/veerrajukakarla434/2021-SpringBoot-SpringData-JPA-MySql-SOAP-MicroService-CRUD-Operations/commit/645faa36bf7c24bfe368153d6e5b85b4347be816#diff-51b23cd13994a24a0428ee84135721f6b2c81010986e02b0f8ce3eb1c70c7713"/>
+	</list>
+</section>

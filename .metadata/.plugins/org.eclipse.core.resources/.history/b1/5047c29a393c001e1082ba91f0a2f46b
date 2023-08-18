@@ -1,0 +1,15 @@
+package com.api.Soap.serviceImpl;
+
+import org.springframework.beans.BeanUtils;
+
+import com.api.Soap.entittes.Employee;
+import com.soapapi.webServices.AddEmployeeRequest;
+
+public class EmployeeHelper {
+
+	public Employee prepareEmployeeModel(AddEmployeeRequest request) { 
+		Employee employee = new Employee();
+		BeanUtils.copyProperties(request.getEmployeeInfo(), employee);
+	    return employee;
+	}
+}

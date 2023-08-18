@@ -1,0 +1,14 @@
+package com.tas.Swagger.controller;
+
+@RestController
+@RequestMapping("/api")
+@Api(tags = "Example API")
+public class Controller {
+
+    @GetMapping("/hello/{name}")
+    @ApiOperation("Get a personalized greeting")
+    public String getGreeting(
+            @ApiParam(value = "Name to greet", example = "John") @PathVariable String name) {
+        return "Hello, " + name + "!";
+    }
+}

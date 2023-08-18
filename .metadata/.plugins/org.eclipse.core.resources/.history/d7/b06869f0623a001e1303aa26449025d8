@@ -1,0 +1,42 @@
+package com.soapapi.webServices.interfacess;
+
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+    "employeeInfo"
+})
+@XmlRootElement(name = "updateEmployeeRequest")
+public class UpdateEmployeeRequest {
+
+    @XmlElement(required = true)
+    protected EmployeeInfo employeeInfo;
+
+    /**
+     * Gets the value of the employeeInfo property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link EmployeeInfo }
+     *     
+     */
+    public EmployeeInfo getEmployeeInfo() {
+        return employeeInfo;
+    }
+
+    /**
+     * Sets the value of the employeeInfo property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link EmployeeInfo }
+     *     
+     */
+    public void setEmployeeInfo(EmployeeInfo value) {
+        this.employeeInfo = value;
+    }
+
+}

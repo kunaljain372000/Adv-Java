@@ -1,0 +1,20 @@
+package com.tas.wildfly18;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+public class Wildfly18Application extends SpringBootServletInitializer {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Wildfly18Application.class, args);
+	}
+
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(Wildfly18Application.class);
+	}
+
+
+}

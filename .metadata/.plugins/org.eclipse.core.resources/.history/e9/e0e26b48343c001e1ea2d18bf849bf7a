@@ -1,0 +1,15 @@
+package com.api.Soap.service;
+
+import com.api.Soap.entittes.Employee;
+
+
+public interface IEmployeeService {
+
+	 public AddEmployeeResponse addEmployee(AddEmployeeRequest request);
+
+	 public GetEmployeeResponse getEmployeeById(GetEmployeeRequest request);
+
+	 public updateEmployee(Employee employee);
+
+	 public deleteEmployee(long employeeId);
+}

@@ -1,0 +1,55 @@
+package com.soapapi.webServices.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.soapapi.webServices.AddEmployeeRequest;
+import com.soapapi.webServices.AddEmployeeResponse;
+import com.soapapi.webServices.entites.Employee;
+import com.soapapi.webServices.interfaces.ServiceStatus;
+import com.soapapi.webServices.repo.EmployeeRepository;
+
+@Service
+public class EmployeeService implements IEmployeeService{
+
+	 @Autowired
+	 private EmployeeRepository employeeRepository;
+
+	 @Autowired
+	 private EmployeeHelper employeeHelper;
+
+	@Override
+	public Employee getEmployeeById(long employeeId) {
+
+		Employee obj = employeeRepository.findByEmployeeId(employeeId);
+		return obj;
+
+	}
+
+	@Override
+	public AddEmployeeResponse AddEmployee(AddEmployeeRequest request) {
+		Employee empModel = employeeHelper.prepareEmployeeModel(request);
+		employeeRepository.save(empModel);
+		
+		AddEmployeeResponse response = new AddEmployeeResponse();
+		ServiceStatus serviceStatus =  new ServiceStatus();
+		serviceStatus.setStatus("SUCCESS");
+		serviceStatus.setMessage("Content Added Successfully");
+		response.setServiceStatus(serviceStatus);
+		
+		return response;
+	}
+
+	@Override
+	public void updateEmployee(Employee employee) {
+		employeeRepository.save(employee);
+
+	}
+
+	@Override
+	public void deleteEmployee(long employeeId) {
+		employeeRepository.deleteById(employeeId);
+
+	}
+
+}

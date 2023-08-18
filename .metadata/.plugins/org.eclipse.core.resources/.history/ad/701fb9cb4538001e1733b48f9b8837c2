@@ -1,0 +1,5 @@
+package com.soapapi.webServices.Interfaces;
+
+public class AddEmployeeRequest {
+
+}

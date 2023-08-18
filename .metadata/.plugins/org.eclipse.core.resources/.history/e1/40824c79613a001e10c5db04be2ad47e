@@ -1,0 +1,5 @@
+package com.soapapi.webServices.interfacess;
+
+public class GetEmployeeByIdRequest {
+
+}

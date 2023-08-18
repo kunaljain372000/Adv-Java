@@ -1,0 +1,9 @@
+package com.soapapi.webServices.repo;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Long>{
+
+
+	Employee findByEmployeeId(long employeeId);
+
+}
