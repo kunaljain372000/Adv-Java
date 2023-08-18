@@ -1,3 +1,0 @@
-
-logging.level.root=info
-$ mvn clean install wildfly:deploy

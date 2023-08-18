@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.tas.SpringCrud.entity&apos; to &apos;com.tas.SpringCrud.entities&apos;&#x0D;&#x0A;- Original project: &apos;SpringCrudApplication&apos;&#x0D;&#x0A;- Original element: &apos;SpringCrudApplication/src/main/java/com.tas.SpringCrud.entity&apos;&#x0D;&#x0A;- Renamed element: &apos;SpringCrudApplication/src/main/java/com.tas.SpringCrud.entities&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.tas.SpringCrud.entity&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.tas.SpringCrud.entity" name="com.tas.SpringCrud.entities" qualified="false" references="true" stamp="1688385707822" textual="false" version="1.0"/>
-</session>

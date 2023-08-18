@@ -1,8 +1,0 @@
-package com.soapapi.webServices.ww;
-
-public class Snippet {
-	public static void main(String[] args) {
-		EmployeeEndpoint 
-	}
-}
-

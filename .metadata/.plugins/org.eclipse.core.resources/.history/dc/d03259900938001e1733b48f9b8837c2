@@ -1,5 +1,0 @@
-package com.tas.restApi.controlller;
-
-public class GlobalExceptionHandler {
-
-}
